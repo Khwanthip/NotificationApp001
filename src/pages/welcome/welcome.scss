@@ -1,0 +1,27 @@
+page-welcome {
+    #welcome{
+        background : linear-gradient(to bottom,
+        #a5fafa 0%,
+        #2db6af 100%,
+        #a6f8ea 0%,
+        )!important;
+        h1{
+            font-size: 20px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            color: rgb(0, 0, 0);
+            font: bold;
+            margin-left: 25pt;
+        }
+        .marginTop{
+            margin-top: 10px;
+        }
+        .logo{
+          height: auto;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+  
+        }
+    }
+}

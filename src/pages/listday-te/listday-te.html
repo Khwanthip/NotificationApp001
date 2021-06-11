@@ -1,0 +1,47 @@
+<!--
+  Generated template for the ListdayTePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title>รายการนัดพบทั้งหมด</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding id="welcome">
+
+  <!-- <button ion-button (click)="backhome()">
+    <ion-icon name="home"></ion-icon> &nbsp; เมนูรายการนัดพบ</button>
+    <br> -->
+    
+  <ion-item-sliding>
+    <ion-item *ngFor="let item of listday">
+      <ion-label>
+        <br>
+        <h2>นัดหมายโดย : {{item.student_title}} {{item.student_name}} {{item.student_lastname}}</h2>
+        <p>รหัสนักศึกษา : {{item.student_id}}</p>
+        <p>วันที่/เวลา {{item.appoint_date_start}} น.</p>
+        <p><b>{{item.project_name}}</b></p>
+        <p>สิ่งที่นำเสนอ : {{item.appoint_comment}}</p>
+        
+      </ion-label>
+    </ion-item>
+  </ion-item-sliding>
+
+  <!-- <ion-card>
+    <ion-item>
+      <h1>รหัส : #2253</h1>
+      <ion-label>08.00 - 15.00 น.</ion-label>
+    </ion-item>
+
+    <ion-card-content>
+      "ส่งงานการบันทึกข้อมูลลงในฐานข้อมูล เพื่อทำการประมวลผล และตรวจสอบผลลัพธ์ที่เกิดขึ้น"
+      <ion-label>
+    <p><b>โครงงานระบบที่ปรึกษาอาจารย์โครงงาน</b></p>
+  </ion-label>
+    </ion-card-content>
+  </ion-card> -->
+
+</ion-content>

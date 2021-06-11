@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar color="dark">
+  <ion-title text-center>เมนูรายการนัดพบ</ion-title>
+  <ion-buttons end >
+    <button ion-button tappable (click)="logout()">
+      <ion-icon name="log-out"></ion-icon>
+    </button>
+  </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding id="welcome">
+  <ion-list>
+
+    <ion-item id="menuparent" (click)="liststatusstuView()">
+      <ion-thumbnail item-start>
+        <img src="assets/imgs/report2.png">
+      </ion-thumbnail>
+      <h2></h2>
+      <p>รายการนัดพบทั้งหมด</p>
+      <button ion-button clear item-end>เรียกดู</button>
+    </ion-item>
+
+    <ion-item id="menuparent" (click)="listallstuView()">
+      <ion-thumbnail item-start>
+        <img src="assets/imgs/report3.png">
+      </ion-thumbnail>
+      <h2></h2>
+      <p>รายการเข้าพบ</p>
+      <button ion-button clear item-end>เรียกดู</button>
+    </ion-item>
+
+      <!-- <button ion-button round block (click)="logout()">ออกจากระบบ</button> -->
+
+  </ion-list>
+</ion-content>

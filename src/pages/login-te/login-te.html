@@ -1,0 +1,29 @@
+<!--
+  Generated template for the LoginTePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content padding id="welcome">
+  <img src="assets/imgs/PAVS.png" class="logo">
+  <!--<h1 class="h1t">Project Advisor Visiting System</h1>
+  <h2 class="h2t">ระบบนัดพบอาจารย์ที่ปรึกษาโครงงาน</h2>-->
+  <ion-card color="white" class="login">
+    <ion-card-header>
+      <div text-center>ล็อคอินสำหรับอาจารย์</div>
+    </ion-card-header>
+    <ion-card-content >
+      <ion-item color="white">
+        <ion-label stacked>รหัสประจำตัว</ion-label>
+        <ion-input type="text" value="" placeholder="กรุณากรอก รหัสประจำตัว" [(ngModel)]="username"></ion-input>
+      </ion-item>
+
+      <ion-item color="white">
+        <ion-label stacked>รหัสผ่าน</ion-label>
+        <ion-input type="password" value="" placeholder="กรุณากรอก รหัสผ่าน" [(ngModel)]="password"></ion-input>
+      </ion-item>
+      <button ion-button color="energy" id="login" class="marginTop" (click)="login_te(username,password)"><ion-icon name="log-in"></ion-icon>&nbsp; เข้าสู่ระบบ</button>
+
+    </ion-card-content>
+  </ion-card>
+</ion-content>

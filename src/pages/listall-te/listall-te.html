@@ -1,0 +1,32 @@
+<!--
+  Generated template for the ListallTePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title>รายการเข้าพบ</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding id="welcome">
+
+  <!-- <button ion-button (click)="backhome()">
+    <ion-icon name="home"></ion-icon> &nbsp; เมนูรายการนัดพบ</button> -->
+    
+  <ion-card-content>
+    <ion-item *ngFor="let item of listArray" (click)="detailliststatusView(item)">
+      <ion-label>
+        
+        <h2>นัดหมายโดย : {{item.student_title}} {{item.student_name}} {{item.student_lastname}}</h2>
+        <p>รหัสนักศึกษา : {{item.student_id}}</p>
+        <p>วันที่/เวลา {{item.appoint_date_start}} น.</p>
+        <p><b>{{item.project_name}}</b></p>
+        
+      </ion-label>
+      <button ion-button clear item-end>รายละเอียด</button>
+    </ion-item>
+  </ion-card-content>
+
+</ion-content>
